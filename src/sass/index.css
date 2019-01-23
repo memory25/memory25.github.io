@@ -166,6 +166,24 @@ ol, ul {
   background: linear-gradient(to top, #011633, black);
   overflow: hidden;
   position: relative; }
+  #home .main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+    #home .main .me {
+      width: 100px;
+      height: 100px;
+      background: url("../images/me.jpg") 0 0/cover no-repeat;
+      border-radius: 100%;
+      margin: 0 auto; }
+    #home .main h1, #home .main h2 {
+      background: linear-gradient(-4deg, white 40%, #6f84a1 50%, white 60%);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text; }
   #home .star-1, #home .star-2, #home .star-3 {
     width: 1px;
     height: 1px;
