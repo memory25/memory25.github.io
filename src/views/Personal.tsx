@@ -1,10 +1,11 @@
 import React from 'react';
+import Carousel from './Carousel';
 
 export default () => (
   <div id="personal">
     <div className="title">Personal</div>
     <div className="main">
-      <div className="carousel">1</div>
+      <Carousel />
       <div className="aboutMe">
         <p>我是莊逸軒，來自高雄。</p>
         <p>

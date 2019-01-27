@@ -3,10 +3,19 @@
         display: flex
         padding: 0 40px
         .carousel
-            flex: 0 0 250px
-            margin: 0 30px
+            &Wrap
+                flex: 0 0 200px
+                margin: 0 30px
+                height: 200px
+            &Inner div
+                transition: all 1s linear
+                &:hover
+                    transform: rotate(10deg)
+                
+            
         .aboutMe
             font-family: Microsoft JhengHei
             font-size: 2.2rem
             letter-spacing: 2px
             text-align: justify
+            font-size: 0
