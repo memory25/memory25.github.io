@@ -161,16 +161,19 @@ ol, ul {
 .flex {
   display: flex; }
 
-#home, #personal, #resume, #porfolios, #contact {
+body {
+  background: #011633; }
+
+#home, #personal, #resume, #skills, #porfolios, #contact {
   min-height: 100vh;
   padding: 100px 0; }
-  #home .title, #personal .title, #resume .title, #porfolios .title, #contact .title {
+  #home .title, #personal .title, #resume .title, #skills .title, #porfolios .title, #contact .title {
     font-size: 4.5rem;
     font-weight: bold;
     text-align: center;
     margin: 100px 0; }
 
-#personal, #porfolios {
+#personal, #skills, #contact {
   background: url("../images/paper-1126172_960_720.jpg") 0 0/cover; }
 
 #home {
