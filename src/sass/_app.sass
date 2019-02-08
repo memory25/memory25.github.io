@@ -14,4 +14,38 @@ body
 
 #personal, #skills, #contact
     background: url('../images/paper-1126172_960_720.jpg') 0 0/cover
+    .title
+        color: rgb(1, 22, 51)
 #resume, #porfolios
+    .title
+        color: rgb(200, 200, 200)
+
+img
+    max-width: 100%
+    width: 100%
+    display: block
+
+#myCustomTooltip
+    .tooltipBlock
+        width: 250px
+        padding: 0 15px
+        position: absolute
+        font-size: 1.4rem
+        color: rgb(1, 22, 51)
+        background-image: radial-gradient(transparent 0, transparent 23px, rgb(200, 200, 200) 23px)
+        background-size: 45px 15px
+        background-position: 10px 6px
+        &::before
+             content: ' '
+             display: block
+             background-color: rgb(200, 200, 200)
+             position: absolute
+             top: 0
+             bottom: 0
+             left: 10px
+             right: 10px
+             z-index: -1
+        h3
+            font-size: 2rem
+        p
+            font-size: 1.8rem

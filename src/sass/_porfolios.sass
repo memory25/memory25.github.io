@@ -1,0 +1,66 @@
+#porfolios
+    .main
+        flex-wrap: wrap
+        justify-content: center
+        .porBox
+            flex: 0 0 25%
+            display: flex
+            flex-direction: column
+            margin-top: 30px
+            &:hover
+                .zoomIn
+                    transform: scale(1.1)
+            &Up, &Down
+                overflow: hidden
+                position: relative
+                color: #fff
+                text-align: center
+                img
+                    transition: .6s linear all
+                h1
+                    position: absolute
+                    top: 10px
+                    width: 100%
+                a
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                    font-size: 1.6rem
+                    display: block
+                    text-decoration: none
+                    min-width: 100px
+                    width: 50%
+                    background: rgba(0, 0, 0, 0.5)
+                    padding: 4px 0
+                    border: 2px solid rgba(155, 155, 155, 0.8)
+                    border-radius: 8px
+                    color: #fff
+            .mirror
+                transform: scaleY(-1)
+                opacity: 0.4
+
+
+@media (max-width: 1350px)
+    #porfolios
+        .main
+            .porBox
+                flex: 0 0 33%
+
+@media (max-width: 1100px)
+    #porfolios
+        .main
+            .porBox
+                flex: 0 0 50%
+
+
+@media (max-width: 800px)
+    #porfolios
+        .main
+            .porBox
+                flex: 0 0 100%
+                .zoomIn
+                    display: none
+                .mirror
+                    transform: scaleY(1)
+                    opacity: 1
