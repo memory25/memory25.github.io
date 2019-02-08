@@ -380,3 +380,13 @@ img {
     #porfolios .main .porBox .mirror {
       transform: scaleY(1);
       opacity: 1; } }
+
+#contact .main {
+  justify-content: center; }
+  #contact .main .fs_embed {
+    flex: 0 0 50%;
+    height: 600px; }
+
+@media (max-width: 600px) {
+  #contact .main .fs_embed {
+    flex: 1 1 100%; } }
