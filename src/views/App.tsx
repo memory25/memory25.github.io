@@ -5,6 +5,7 @@ import Resume from './Resume';
 import Skills from './Skills';
 import Porfolios from './Porfolios';
 import Contact from './Contact';
+import Footer from './Footer';
 
 const App = () => (
   <div id="app">
@@ -14,6 +15,7 @@ const App = () => (
     <Skills />
     <Porfolios />
     <Contact />
+    <Footer />
   </div>
 );
 
