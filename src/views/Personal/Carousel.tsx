@@ -1,14 +1,17 @@
 import React, {useState, useEffect, useCallback, useRef} from 'react';
 
-const tempPropsArr = ['orange', 'yellow', 'green', 'purple'];
+interface IProps {
+  imgList: string[];
+}
 
-function Carousel() {
+function Carousel(props: IProps) {
+  const {imgList} = props;
   const position = useRef<number[]>([0]);
   const carouselEl = useRef<HTMLDivElement | null>(null);
   const carouselTimer = useRef<NodeJS.Timeout | null>(null);
   const [imgStyle, setImgStyle] = useState(
     (): React.CSSProperties[] =>
-      tempPropsArr.map(
+      imgList.map(
         (src: string, i: number): React.CSSProperties => {
           position.current[i] = i;
           return {
@@ -115,13 +118,7 @@ function Carousel() {
     >
       {imgStyle.map((style, i) => (
         <div className="carouselInner" style={style}>
-          <div
-            style={{
-              background: tempPropsArr[i],
-              width: '100%',
-              height: '150px',
-            }}
-          />
+          <img src={imgList[i]} alt="" />
         </div>
       ))}
     </div>

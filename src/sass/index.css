@@ -269,14 +269,15 @@ img {
     transform: translateY(-5000px); } }
 
 #personal .main .carouselWrap {
-  flex: 0 0 200px;
+  flex: 0 0 250px;
   margin: 0 30px;
-  height: 200px; }
+  height: 333px;
+  border-radius: 20px; }
 
-#personal .main .carouselInner div {
+#personal .main .carouselInner img {
   transition: all 1s linear; }
-  #personal .main .carouselInner div:hover {
-    transform: rotate(10deg); }
+  #personal .main .carouselInner img:hover {
+    transform: rotate(-10deg); }
 
 #personal .main .aboutMe {
   font-family: Microsoft JhengHei;
