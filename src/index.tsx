@@ -10,3 +10,9 @@ ReactDOM.render(<App />, document.getElementById('root'));
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: http://bit.ly/CRA-PWA
 serviceWorker.unregister();
+
+if (navigator.userAgent.match('Firefox')) {
+  // make scrollbar hidden
+  (document.querySelector('body') as HTMLBodyElement).style.width =
+    'calc(100vw + 18px)';
+}

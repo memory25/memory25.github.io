@@ -1,6 +1,17 @@
+html
+    overflow: -moz-hidden-unscrollable // Firefox
+    height: 100%  // Firefox
 body
     background: rgb(1, 22, 51)
     line-height: 1
+    overflow: auto
+    height: 100%
+    position: relative
+    -ms-overflow-style: none // IE Edge
+    -moz-width: calc(100vw + 18px) 
+    // width: calc(100vw + 18px) if Firefox
+    &::-webkit-scrollbar // Chrome
+        display: none
 #home, #personal, #resume, #skills, #porfolios, #contact
     min-height: 100vh
     padding: 100px 0

@@ -161,9 +161,20 @@ ol, ul {
 .flex {
   display: flex; }
 
+html {
+  overflow: -moz-hidden-unscrollable;
+  height: 100%; }
+
 body {
   background: #011633;
-  line-height: 1; }
+  line-height: 1;
+  overflow: auto;
+  height: 100%;
+  position: relative;
+  -ms-overflow-style: none;
+  -moz-width: calc(100vw + 18px); }
+  body::-webkit-scrollbar {
+    display: none; }
 
 #home, #personal, #resume, #skills, #porfolios, #contact {
   min-height: 100vh;
