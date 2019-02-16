@@ -1,19 +1,19 @@
 import React from 'react';
 import useTooltip from './useTooltip';
-import porfsConst from './porfsConst';
+import portfConst from './portfConst';
 
-interface IPorf {
+interface IPortf {
   src: string;
   description: string;
   link: string;
   theme: string;
 }
 
-interface IPorfs {
-  [porfName: string]: IPorf;
+interface IPortfs {
+  [porfName: string]: IPortf;
 }
 
-interface IPorBox extends IPorf {
+interface IPorBox extends IPortf {
   index: number;
 }
 
@@ -48,14 +48,14 @@ function PorBox(props: IPorBox): JSX.Element {
   );
 }
 
-const generatePor = (porfs: IPorfs): JSX.Element[] =>
-  Object.values(porfs).map((porf: IPorf, i: number) => (
+const generatePor = (porfs: IPortfs): JSX.Element[] =>
+  Object.values(porfs).map((porf: IPortf, i: number) => (
     <PorBox {...porf} index={i} />
   ));
 
 export default () => (
-  <div id="porfolios">
-    <div className="title">Porfolios</div>
-    <div className="main">{generatePor(porfsConst)}</div>
+  <div id="portfolio">
+    <div className="title">Portfolio</div>
+    <div className="main">{generatePor(portfConst)}</div>
   </div>
 );

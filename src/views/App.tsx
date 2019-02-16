@@ -4,7 +4,7 @@ import Home from './Home';
 import Personal from './Personal';
 import Resume from './Resume';
 import Skills from './Skills';
-import Porfolios from './Porfolios';
+import Portfolio from './Portfolio';
 import Contact from './Contact';
 import Footer from './Footer';
 
@@ -15,7 +15,7 @@ const App = () => (
     <Personal />
     <Resume />
     <Skills />
-    <Porfolios />
+    <Portfolio />
     <Contact />
     <Footer />
   </div>

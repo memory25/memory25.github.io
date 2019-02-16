@@ -176,15 +176,15 @@ body {
   body::-webkit-scrollbar {
     display: none; }
 
-#home, #personal, #resume, #skills, #porfolios, #contact {
+#home, #personal, #resume, #skills, #portfolio, #contact {
   min-height: 100vh;
   padding: 100px 0; }
-  #home .title, #personal .title, #resume .title, #skills .title, #porfolios .title, #contact .title {
+  #home .title, #personal .title, #resume .title, #skills .title, #portfolio .title, #contact .title {
     font-size: 4.5rem;
     font-weight: bold;
     text-align: center;
     margin: 100px 0; }
-  #home .main, #personal .main, #resume .main, #skills .main, #porfolios .main, #contact .main {
+  #home .main, #personal .main, #resume .main, #skills .main, #portfolio .main, #contact .main {
     display: flex;
     padding: 0 40px; }
 
@@ -193,7 +193,7 @@ body {
   #personal .title, #skills .title, #contact .title {
     color: #011633; }
 
-#resume, #porfolios, #footer {
+#resume, #portfolio, #footer {
   color: #c8c8c8; }
 
 img {
@@ -400,28 +400,28 @@ img {
     #skills .main .card:nth-of-type(2) {
       margin: 30px 0 0 0; } }
 
-#porfolios .main {
+#portfolio .main {
   flex-wrap: wrap;
   justify-content: center; }
-  #porfolios .main .porBox {
+  #portfolio .main .porBox {
     flex: 0 0 25%;
     display: flex;
     flex-direction: column;
     margin-top: 30px; }
-    #porfolios .main .porBox:hover .zoomIn {
+    #portfolio .main .porBox:hover .zoomIn {
       transform: scale(1.1); }
-    #porfolios .main .porBoxUp, #porfolios .main .porBoxDown {
+    #portfolio .main .porBoxUp, #portfolio .main .porBoxDown {
       overflow: hidden;
       position: relative;
       color: #fff;
       text-align: center; }
-      #porfolios .main .porBoxUp img, #porfolios .main .porBoxDown img {
+      #portfolio .main .porBoxUp img, #portfolio .main .porBoxDown img {
         transition: .6s linear all; }
-      #porfolios .main .porBoxUp h1, #porfolios .main .porBoxDown h1 {
+      #portfolio .main .porBoxUp h1, #portfolio .main .porBoxDown h1 {
         position: absolute;
         top: 10px;
         width: 100%; }
-      #porfolios .main .porBoxUp a, #porfolios .main .porBoxDown a {
+      #portfolio .main .porBoxUp a, #portfolio .main .porBoxDown a {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -436,24 +436,24 @@ img {
         border: 2px solid rgba(155, 155, 155, 0.8);
         border-radius: 8px;
         color: #fff; }
-    #porfolios .main .porBox .mirror {
+    #portfolio .main .porBox .mirror {
       transform: scaleY(-1);
       opacity: 0.4; }
 
 @media (max-width: 1350px) {
-  #porfolios .main .porBox {
+  #portfolio .main .porBox {
     flex: 0 0 33%; } }
 
 @media (max-width: 1100px) {
-  #porfolios .main .porBox {
+  #portfolio .main .porBox {
     flex: 0 0 50%; } }
 
 @media (max-width: 800px) {
-  #porfolios .main .porBox {
+  #portfolio .main .porBox {
     flex: 0 0 100%; }
-    #porfolios .main .porBox .zoomIn {
+    #portfolio .main .porBox .zoomIn {
       display: none; }
-    #porfolios .main .porBox .mirror {
+    #portfolio .main .porBox .mirror {
       transform: scaleY(1);
       opacity: 1; } }
 

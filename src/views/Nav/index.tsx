@@ -12,7 +12,7 @@ const NavItemCons = {
   personal: 'Personal',
   resume: 'Resume',
   skills: 'Skills',
-  porfolios: 'Porfolios',
+  portfolio: 'Portfolio',
   contact: 'Contact',
 };
 
@@ -28,13 +28,13 @@ export default () => {
       personal,
       resume,
       skills,
-      porfolios,
+      portfolio,
       contact,
     } = appEl.children as any; // HTMLElement
     if (currentScrollPos >= contact.offsetTop) {
       setCurArea('#contact');
-    } else if (currentScrollPos >= porfolios.offsetTop) {
-      setCurArea('#porfolios');
+    } else if (currentScrollPos >= portfolio.offsetTop) {
+      setCurArea('#portfolio');
     } else if (currentScrollPos >= skills.offsetTop) {
       setCurArea('#skills');
     } else if (currentScrollPos >= resume.offsetTop) {

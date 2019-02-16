@@ -5,8 +5,8 @@ import cssimg from '../../images/cssimg.png';
 import girlDolls from '../../images/girlDolls.png';
 import battlegame from '../../images/battlegame.png';
 
-interface IPorfs {
-  [porfName: string]: {
+interface IPortf {
+  [portfName: string]: {
     src: string;
     description: string;
     link: string;
@@ -28,7 +28,7 @@ const generateDes = ({title, date, purpose, used}: IDescription): string => `
   <p style='color:red'>${used}</p>
 `;
 
-const porfs: IPorfs = {
+const portf: IPortf = {
   battlegame: {
     src: battlegame,
     description: generateDes({
@@ -97,4 +97,4 @@ const porfs: IPorfs = {
   },
 };
 
-export default porfs;
+export default portf;
