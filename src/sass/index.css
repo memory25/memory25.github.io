@@ -162,7 +162,8 @@ ol, ul {
   display: flex; }
 
 body {
-  background: #011633; }
+  background: #011633;
+  line-height: 1; }
 
 #home, #personal, #resume, #skills, #porfolios, #contact {
   min-height: 100vh;
@@ -212,6 +213,33 @@ img {
     font-size: 2rem; }
   #myCustomTooltip .tooltipBlock p {
     font-size: 1.8rem; }
+
+#nav {
+  position: absolute;
+  background: #070133;
+  width: 100%;
+  height: 60px;
+  top: 100vh;
+  z-index: 999;
+  font-size: 2rem; }
+  #nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0 40px; }
+    #nav ul li:nth-of-type(1) {
+      font-size: 3rem;
+      margin: 0 auto 0 0; }
+    #nav ul li a {
+      text-decoration: none;
+      padding: 0 15px;
+      display: block;
+      height: 60px;
+      line-height: 60px;
+      box-sizing: border-box;
+      color: #070133;
+      text-shadow: #c8c8c8 0px 0px 9px, #c8c8c8 0px 0px 9px, #c8c8c8 0px 0px 9px, #c8c8c8 0px 0px 9px, #c8c8c8 0px 0px 9px, #c8c8c8 0px 0px 9px; }
+      #nav ul li a:hover {
+        color: #fff; }
 
 #home {
   height: 100vh;
