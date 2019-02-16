@@ -362,6 +362,51 @@ img {
   text-align: justify;
   font-size: 0; }
 
+#resume .main {
+  flex-wrap: wrap; }
+  #resume .main .row {
+    flex: 0 0 100%;
+    position: relative;
+    padding: 20px;
+    padding-left: 60px;
+    text-align: justify; }
+    #resume .main .row:nth-of-type(1)::after {
+      background: transparent;
+      border-radius: 0;
+      border-width: 3px 3px 0 0;
+      transform: translate(0px, 20px) rotate(-45deg); }
+    #resume .main .row::before {
+      content: '';
+      width: 4px;
+      background: #c8c8c8;
+      position: absolute;
+      left: 8px;
+      top: 60px;
+      bottom: -40px;
+      z-index: 999; }
+    #resume .main .row:after {
+      content: '';
+      width: 20px;
+      height: 20px;
+      border: 3px solid;
+      background: #fff;
+      box-sizing: border-box;
+      position: absolute;
+      left: 0;
+      top: 40px;
+      border-radius: 100%; }
+    #resume .main .row h2 {
+      font-size: 3.5rem; }
+    #resume .main .row h3 {
+      font-size: 2.8rem;
+      margin-top: 35px;
+      margin-bottom: 18px; }
+    #resume .main .row p {
+      font-size: 2.2rem;
+      margin: 10px 0; }
+      #resume .main .row p a {
+        color: #c8c8c8; }
+
 #skills .title {
   flex: 0 0 100%; }
 
