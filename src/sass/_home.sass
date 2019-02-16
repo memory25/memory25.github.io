@@ -1,8 +1,45 @@
+@keyframes aniJumpImg
+    30%
+        opacity: 1
+    50%
+        width: 18px
+        height: 18px
+    100%
+        width: 12px
+        height: 12px
+        -webkit-transform: translateY(25px) rotate(45deg)
+        transform: translateY(25px) rotate(45deg)
+        opacity: 0.5
+
 #home
     height: 100vh
     background: linear-gradient(to top, rgb(1, 22, 51), rgb(0, 0, 0))
     overflow: hidden
     position: relative
+    .homeJump
+        width: 50px
+        height: 50px
+        position: absolute
+        bottom: 0
+        left: 50%
+        transform: translate(-50%, -50%)
+        border: 3px solid #FFF
+        border-radius: 100%
+        &Img, &Img::before, &Img::after
+            width: 12px
+            height: 12px
+            border: solid #FFF
+            border-width: 0 3px 3px 0
+            margin: 0 auto
+            transform: translateY(0px) rotate(45deg)
+        &Img
+            animation: aniJumpImg 1s infinite linear alternate
+        &Img::before, &Img::after
+            content: ''
+            position: absolute
+            transform: rotate(0deg)
+        &Img::after
+            transform: rotate(-45deg) translateY(5px) rotate(45deg)
     .main
         position: absolute
         top: 50%

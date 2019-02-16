@@ -1,4 +1,5 @@
 import React from 'react';
+import scrollToView from '../Nav/scrollToView';
 
 export default () => (
   <div id="home">
@@ -10,5 +11,8 @@ export default () => (
       <h1 className="name">Sam Jhuang</h1>
       <h2 className="role">Front-End Developer</h2>
     </div>
+    <a href="#personal" className="homeJump" onClick={scrollToView}>
+      <div className="homeJumpImg" />
+    </a>
   </div>
 );
