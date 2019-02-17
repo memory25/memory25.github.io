@@ -236,7 +236,9 @@ img {
   #nav ul {
     display: flex;
     margin: 0;
-    padding: 0 40px; }
+    padding: 0 40px;
+    position: relative;
+    transition: height .5s; }
     #nav ul li:nth-of-type(1) {
       font-size: 3rem;
       margin: 0 auto 0 0; }
@@ -244,13 +246,41 @@ img {
       text-decoration: none;
       padding: 0 15px;
       display: block;
-      height: 60px;
       line-height: 60px;
       box-sizing: border-box;
       color: #070133;
       text-shadow: #c8c8c8 0px 0px 9px, #c8c8c8 0px 0px 9px, #c8c8c8 0px 0px 9px, #c8c8c8 0px 0px 9px, #c8c8c8 0px 0px 9px, #c8c8c8 0px 0px 9px; }
       #nav ul li a:hover {
         color: #fff; }
+    #nav ul .bar {
+      width: 30px;
+      height: 30px;
+      background: linear-gradient(#fff 3px, transparent 3px);
+      background-size: 100% 13px;
+      position: absolute;
+      right: 40px;
+      top: 15px;
+      display: none;
+      outline: none; }
+
+@media (max-width: 800px) {
+  #nav ul {
+    overflow: hidden;
+    flex-wrap: wrap; }
+    #nav ul .bar {
+      display: block; }
+    #nav ul li:nth-of-type(1) {
+      padding: 0; }
+      #nav ul li:nth-of-type(1) a {
+        width: 100px;
+        line-height: 60px; }
+    #nav ul li {
+      flex: 1 1 100%;
+      background: rgba(0, 0, 0, 0.1);
+      margin: 0 -40px;
+      padding: 0 40px; }
+      #nav ul li a {
+        line-height: 40px; } }
 
 @keyframes aniJumpImg {
   30% {

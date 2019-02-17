@@ -18,6 +18,7 @@ const NavItemCons = {
 
 export default () => {
   const [isSticky, setSticky] = useState<boolean>(false);
+  const [showBarList, setShowBarList] = useState<boolean>(false);
   const [curArea, setCurArea] = useState<string>('#home');
 
   const judgeHightLight = useCallback(() => {
@@ -64,10 +65,25 @@ export default () => {
     };
   }, []);
   const locate = useCallback(scrollToView, []);
+  const toggleBar = useCallback(() => {
+    setShowBarList(pre => !pre);
+  }, []);
   return (
     <div id="nav" style={isSticky ? navStickyStyle : undefined}>
-      <ul>
+      <ul
+        style={{
+          height: showBarList ? '260px' : '60px',
+          // 60 + 40 * 5(items)
+        }}
+      >
         <NavItems itemCons={NavItemCons} onClick={locate} curArea={curArea} />
+        <i
+          className="bar"
+          onClick={toggleBar}
+          onKeyDown={toggleBar}
+          role="button"
+          tabIndex={-1}
+        />
       </ul>
     </div>
   );

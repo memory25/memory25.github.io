@@ -10,6 +10,8 @@
         display: flex
         margin: 0
         padding: 0 40px
+        position: relative
+        transition: height .5s
         li
             &:nth-of-type(1)
                 font-size: 3rem
@@ -18,10 +20,41 @@
                 text-decoration: none
                 padding: 0 15px
                 display: block
-                height: 60px
                 line-height: 60px
                 box-sizing: border-box
                 color: rgb(7, 1, 51)
                 text-shadow: rgba(200, 200, 200, 1) 0px 0px 9px, rgba(200, 200, 200, 1) 0px 0px 9px, rgba(200, 200, 200, 1) 0px 0px 9px, rgba(200, 200, 200, 1) 0px 0px 9px, rgba(200, 200, 200, 1) 0px 0px 9px, rgba(200, 200, 200, 1) 0px 0px 9px
                 &:hover
                     color: #fff
+        .bar
+            width: 30px
+            height: 30px
+            background: linear-gradient(#fff 3px, transparent 3px)
+            background-size: 100% 13px
+            position: absolute
+            right: 40px
+            top: 15px
+            display: none
+            outline: none
+
+
+@media (max-width: 800px)
+    #nav
+        ul
+            overflow: hidden
+            flex-wrap: wrap
+            .bar
+                display: block
+            li:nth-of-type(1)
+                padding: 0
+                a
+                    width: 100px
+                    line-height: 60px
+            li
+                flex: 1 1 100%
+                background: rgba(0, 0, 0, 0.1)
+                margin: 0 -40px
+                padding: 0 40px
+                a
+                    line-height: 40px
+                    
