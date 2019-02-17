@@ -378,7 +378,10 @@ img {
   flex: 0 0 250px;
   margin: 0 30px;
   height: 333px;
-  border-radius: 20px; }
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1; }
 
 #personal .main .carouselInner img {
   transition: all 1s linear; }

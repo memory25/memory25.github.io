@@ -108,16 +108,13 @@ function Carousel(props: IProps) {
   return (
     <div
       className="carouselWrap"
-      style={{
-        position: 'relative',
-        overflow: 'hidden',
-      }}
       onMouseEnter={onHover}
       onMouseLeave={onHover}
       ref={carouselEl}
     >
       {imgStyle.map((style, i) => (
-        <div key={style.transform} className="carouselInner" style={style}>
+        // eslint-disable
+        <div key={`carousel${i}`} className="carouselInner" style={style}>
           <img src={imgList[i]} alt="" />
         </div>
       ))}
