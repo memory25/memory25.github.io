@@ -117,7 +117,7 @@ function Carousel(props: IProps) {
       ref={carouselEl}
     >
       {imgStyle.map((style, i) => (
-        <div className="carouselInner" style={style}>
+        <div key={style.transform} className="carouselInner" style={style}>
           <img src={imgList[i]} alt="" />
         </div>
       ))}

@@ -48,9 +48,9 @@ function PorBox(props: IPorBox): JSX.Element {
   );
 }
 
-const generatePor = (porfs: IPortfs): JSX.Element[] =>
-  Object.values(porfs).map((porf: IPortf, i: number) => (
-    <PorBox {...porf} index={i} />
+const generatePor = (portfs: IPortfs): JSX.Element[] =>
+  Object.values(portfs).map((portf: IPortf, i: number) => (
+    <PorBox key={portf.link} {...portf} index={i} />
   ));
 
 export default () => (
