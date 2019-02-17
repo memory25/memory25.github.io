@@ -12,8 +12,8 @@ const Link = ({to, content}: IPropsLink) => (
 );
 
 export default () => (
-  <div id="resume">
-    <div className="title">Resume</div>
+  <div id="experience">
+    <div className="title">Experience</div>
     <div className="main">
       <div className="row">
         <h2>神準科技 2017/11/27 - Now</h2>
@@ -40,7 +40,7 @@ export default () => (
             to="https://github.com/memory25/myReactForm"
             content="相關component"
           />
-          處裡大量Form，避免類似的樣板代碼重複
+          處理大量Form，避免類似的樣板代碼重複
         </p>
         <p>
           寫了一個

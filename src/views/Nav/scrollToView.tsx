@@ -1,7 +1,7 @@
 export default function scrollToView(e: React.MouseEvent) {
   e.preventDefault();
   const targetElY = (document.querySelector(
-    (e.target as HTMLAnchorElement).hash
+    (e.currentTarget as HTMLAnchorElement).hash
   ) as HTMLDivElement).offsetTop;
   const distance: number = targetElY - window.pageYOffset;
   const gapFreq: number = 15;

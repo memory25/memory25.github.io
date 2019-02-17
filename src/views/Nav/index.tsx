@@ -10,7 +10,7 @@ const navStickyStyle: React.CSSProperties = {
 const NavItemCons = {
   home: 'Home',
   personal: 'Personal',
-  resume: 'Resume',
+  experience: 'Experience',
   skills: 'Skills',
   portfolio: 'Portfolio',
   contact: 'Contact',
@@ -26,7 +26,7 @@ export default () => {
     const {
       home,
       personal,
-      resume,
+      experience,
       skills,
       portfolio,
       contact,
@@ -37,8 +37,8 @@ export default () => {
       setCurArea('#portfolio');
     } else if (currentScrollPos >= skills.offsetTop) {
       setCurArea('#skills');
-    } else if (currentScrollPos >= resume.offsetTop) {
-      setCurArea('#resume');
+    } else if (currentScrollPos >= experience.offsetTop) {
+      setCurArea('#experience');
     } else if (currentScrollPos >= personal.offsetTop) {
       setCurArea('#personal');
     } else if (currentScrollPos >= home.offsetTop) {
