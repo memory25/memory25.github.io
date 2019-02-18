@@ -113,7 +113,7 @@ function Carousel(props: IProps) {
       ref={carouselEl}
     >
       {imgStyle.map((style, i) => (
-        // eslint-disable
+        /* eslint-disable */
         <div key={`carousel${i}`} className="carouselInner" style={style}>
           <img src={imgList[i]} alt="" />
         </div>
