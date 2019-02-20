@@ -1,11 +1,13 @@
 import React from 'react';
 import Carousel from './Carousel';
 import imgList from './imgList';
+import Pikachu from './Pika';
 
 export default () => (
   <div id="personal">
     <div className="title">Personal</div>
     <div className="main">
+      <Pikachu />
       <Carousel imgList={imgList} />
       <div className="aboutMe">
         <p>我是莊逸軒，來自高雄。</p>

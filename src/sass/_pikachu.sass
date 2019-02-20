@@ -1,0 +1,274 @@
+$face: 100px
+$faceColor: #f9ed7c
+$eyesColor: #DD7C0C
+$eyeBallColor: #000
+$bringColor: #fff
+$cornorColor: #CEA6A6
+$noseColor: #DD7C0C
+$cheekColor: #e65a41
+
+$earsColor: #e0d572
+
+$handsColor: #e0d572
+
+$tailColor: #9c5200
+$tailColor_2: #f7e64b
+$tailColor_3: #000
+
+$headerZindex: 100
+$bodyZindex: 99
+$tailZindex: 98
+
+.pikachu
+  padding-top: 50px
+  //transform: translate(-105px, 0)
+  // header
+  .header
+    position: relative
+    z-index: $headerZindex
+    transform: translate(0, 0px)
+    .ears
+      .left, .right
+        overflow: hidden
+        width: 25px
+        height: 100px
+        //background: $earsColor
+        background: $faceColor
+        position: absolute
+        top: -50px
+        border:
+          top:
+            left-radius: 50% 40px
+            right-radius: 50% 40px
+          bottom:
+            left-radius: 50% 30px
+            right-radius: 50% 30px
+        .end
+          width: 100%
+          height: 50px
+          border: 5px solid black
+          border-width: 30px 0 0 0
+          border-radius: 10px / 40px
+      .left
+        transform: rotate(-15deg)
+      .right
+        left: 70px
+        //transform: rotate(15deg)
+        animation: 2s infinite earShake alternate
+        transform-origin: 12.5px 50px
+    .face
+      width: $face
+      height: $face
+      background: $faceColor
+      border:
+        top:
+          left-radius: 50% 67px
+          right-radius: 50% 67px
+        bottom:
+          left-radius: 50% 45px
+          right-radius: 50% 45px
+      position: relative
+      overflow: hidden
+      .eyes
+        width: $face/5
+        height: $face/4
+        position: absolute
+        background: $eyesColor
+        border-radius: 100% / 100%
+        top: 35px
+        box-sizing: border-box
+        border: 2px solid
+        overflow: hidden
+        animation: 5s blink infinite
+        &.left
+          left: 15px
+          .eyeball
+            box-shadow: 0px -6px $eyeBallColor, 3px -3px $eyeBallColor
+          .bring
+            right: 2px
+          .cornor
+            left: -2px
+            transform: skew(-15deg)
+        &.right
+          right: 15px
+          .eyeball
+            box-shadow: 0px -6px $eyeBallColor, -3px -3px $eyeBallColor
+          .bring
+            left: 2px
+          .cornor
+            right: -2px
+            transform: skew(15deg)
+        .eyeball
+          width: 10px
+          height: 10px
+          background: black
+          border-radius: 100%
+          position: absolute
+          top: 50%
+          left: 50%
+          transform: translate(-50%, -50%)
+        .bring
+          width: 8px
+          height: 8px
+          background: $bringColor
+          border-radius: 100%
+          position: absolute
+        .cornor
+          width: 10px
+          height: 10px
+          background: $cornorColor
+          border-radius: 100%
+          position: absolute
+          bottom: -3px
+      .nose
+        width: 4px
+        height: 4px
+        //background: $noseColor
+        border-radius: 100%
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, 10px)
+      .mouth
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-12px, -10px)
+        &::before, &::after
+          content: ''
+          width: 20px
+          height: 20px
+          border-radius: 100%
+          border: 1px solid
+          border-color: transparent transparent $cheekColor transparent
+          position: absolute
+          top: 10px
+        &::before
+          transform: translate(-7px, 0)
+        &::after
+          transform: translate(7px, 0)
+      .cheek
+        .left, .right
+          width: 45px
+          height: 30px
+          background: $cheekColor
+          border-radius: 100%
+          position: absolute
+          bottom: -5px
+        .left
+          left: -15px
+          transform: rotate(-30deg)
+        .right
+          right: -15px
+          transform: rotate(30deg)
+//header
+
+//body
+.body
+  width: $face
+  height: $face
+  position: relative
+  background: $faceColor
+  border:   
+    top:
+      left-radius: 50% 67px
+      right-radius: 50% 67px
+    bottom:
+      left-radius: 50% 45px
+      right-radius: 50% 45px
+  transform: translate(0, -20px)
+  z-index: $bodyZindex
+  overflow: hidden
+//body
+
+//hands
+.hands
+  .left, .right
+    position: absolute
+    width: 20px
+    height: 40px
+    //background: $handsColor
+    border-radius: 10px / 20px
+    border: 2px solid $handsColor
+  .left
+    transform: translate(10px,10px) rotate(-30deg)
+    &::before
+      content: ''
+      background: $faceColor
+      display: block
+      transform: translate(-5px, 0px)
+      width: 30px
+      height: 15px
+  .right
+    right: 0
+    transform: translate(-10px,10px) rotate(30deg)
+    &::before
+      content: ''
+      background: $faceColor
+      display: block
+      transform: translate(-5px, 0px)
+      width: 30px
+      height: 15px
+//hands
+
+//legs
+.legs
+  .left, .right
+    position: absolute
+    width: 20px
+    height: 40px
+    background: $handsColor
+    border-radius: 10px / 20px
+    bottom: 0
+  .left
+    transform: translate(10px,10px) rotate(0deg)
+  .right
+    right: 0
+    transform: translate(-10px,10px) rotate(0deg)
+//legs
+
+//tail
+.tail
+  position: absolute
+  transform: translate(90px, -70px)
+  z-index: $tailZindex
+  animation: 7s infinite tailShake
+  &_1, &_2, &_3,
+    position: absolute
+  &_1
+    width: 20px
+    height: 20px
+    background: $tailColor
+    transform: rotate(10deg) skew(-20deg)
+  &_2
+    width: 25px
+    height: 60px
+    background: $tailColor_2
+    left: 20px
+    transform: translate(8px,-35px) rotate(10deg) skew(-20deg)
+  &_3
+    width: 40px
+    height: 30px
+    background: $tailColor_3
+    left: 40px
+    transform: translate(0px,-35px) rotate(10deg) skew(-20deg)
+//tail
+
+
+@keyframes earShake
+  0%
+    transform: rotate(12deg)
+  100%
+    transform: rotate(18deg)
+  
+@keyframes blink
+  0%, 9%, 11%, 19%, 21%, 69%, 71%, 100%
+    transform: scaleY(1)
+  10%, 20%, 70%
+    transform: scaleY(0.1)
+  
+@keyframes tailShake
+  0%, 9%, 11%, 19%, 21%, 69%, 71%, 100%
+    transform: translate(90px, -70px) rotate(0deg)
+  10%, 20%, 70%
+    transform: translate(90px, -70px) rotate(40deg)
