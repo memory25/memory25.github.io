@@ -20,7 +20,7 @@ interface IReturn {
 }
 
 const useTooltip = (options: ITipOptions): IReturn => {
-  let tooltipDiv: Element | null = document.querySelector('#myCustomTooltip');
+  let tooltipDiv = document.querySelector('#myCustomTooltip');
   const [tooltipDivMain] = useState(() => {
     const div = document.createElement('div');
     div.className = 'tooltipBlock';

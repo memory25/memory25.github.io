@@ -6,7 +6,7 @@ interface IProps {
 
 function Carousel(props: IProps) {
   const {imgList} = props;
-  const position = useRef<number[]>([0]);
+  const position = useRef<number[]>([]);
   const carouselEl = useRef<HTMLDivElement | null>(null);
   const carouselTimer = useRef<NodeJS.Timeout | null>(null);
   const [imgStyle, setImgStyle] = useState(
