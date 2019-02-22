@@ -4,6 +4,10 @@ import snake from '../../images/snake.png';
 import cssimg from '../../images/cssimg.png';
 import girlDolls from '../../images/girlDolls.png';
 import battlegame from '../../images/battlegame.png';
+import purecssgame from '../../images/purecssgame.png';
+import ajaxPractice from '../../images/kaohsiungdisasterquery.png';
+import personv1 from '../../images/personv1-jquery.png';
+import comment from '../../images/comment.png';
 
 interface IPortf {
   [portfName: string]: {
@@ -29,6 +33,28 @@ const generateDes = ({title, date, purpose, used}: IDescription): string => `
 `;
 
 const portf: IPortf = {
+  purecssgame: {
+    src: purecssgame,
+    description: generateDes({
+      title: '沒有JS，靠CSS踩地雷',
+      date: '2017/12',
+      purpose: '挑戰沒有使用JS做遊戲',
+      used: 'HTML、CSS、checkbox、radio',
+    }),
+    link: 'https://memory25.github.io/cssgame/',
+    theme: 'CSS遊戲',
+  },
+  personal: {
+    src: personv1,
+    description: generateDes({
+      title: 'v1舊版網站',
+      date: '2017/10',
+      purpose: '產出個人介紹網',
+      used: 'jQuery、Sass',
+    }),
+    link: 'https://codepen.io/Xuan411/pen/zPYVoo?editors=0010',
+    theme: 'v1舊版網站，v2本站為React hooks',
+  },
   battlegame: {
     src: battlegame,
     description: generateDes({
@@ -40,6 +66,17 @@ const portf: IPortf = {
     link: 'https://codepen.io/Xuan411/pen/zPYVoo?editors=0010',
     theme: '俄羅斯方塊',
   },
+  comment: {
+    src: comment,
+    description: generateDes({
+      title: '留言板',
+      date: '2017/10',
+      purpose: '練習熟悉React',
+      used: 'React、localStorage',
+    }),
+    link: 'https://codepen.io/Xuan411/pen/QqYovz',
+    theme: '留言板',
+  },
   cssimg: {
     src: cssimg,
     description: generateDes({
@@ -50,6 +87,17 @@ const portf: IPortf = {
     }),
     link: 'https://memory25.github.io/cssimg/',
     theme: 'CSS圖片',
+  },
+  ajaxPractice: {
+    src: ajaxPractice,
+    description: generateDes({
+      title: '政府開放資料',
+      date: '2017/9',
+      purpose: '練習串API',
+      used: 'AJAX、XHR',
+    }),
+    link: 'https://memory25.github.io/kaohsiungdisasterquery/',
+    theme: 'AJAX練習',
   },
   girlDolls: {
     src: girlDolls,
