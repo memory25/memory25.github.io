@@ -16,7 +16,8 @@ function Carousel(props: IProps) {
           position.current[i] = i;
           return {
             width: '100%',
-            position: 'absolute',
+            position: i === 1 ? 'relative' : 'absolute',
+            top: 0,
             transform: `translateX(${(i - 1) * 100}%)`,
             transition: 'transform 2s, opacity 1s linear',
             zIndex: 1,

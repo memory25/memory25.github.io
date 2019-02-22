@@ -1,10 +1,16 @@
 #personal
+    position: relative
     .main
+        justify-content: center
+        .pikachu
+            position: absolute
+            top: 80px
+            left: 0
         .carousel
             &Wrap
-                flex: 0 0 250px
+                flex: 0 0 300px
+                height: 400px
                 margin: 0 30px
-                height: 333px
                 border-radius: 20px
                 overflow: hidden
                 position: relative
@@ -17,7 +23,15 @@
             
         .aboutMe
             font-family: Microsoft JhengHei
-            font-size: 2.2rem
+            font-size: 2rem
             letter-spacing: 2px
             text-align: justify
-            font-size: 0
+            color: rgb(1, 22, 51)
+            padding: 0 30px
+
+@media (max-width: 800px)
+    #personal
+        .main
+            flex-wrap: wrap
+            .carousel
+                flex: 1 1 100%

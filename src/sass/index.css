@@ -178,7 +178,7 @@ body {
 
 #home, #personal, #experience, #skills, #portfolio, #contact {
   min-height: 100vh;
-  padding: 100px 0; }
+  padding: 60px 0; }
   #home .title, #personal .title, #experience .title, #skills .title, #portfolio .title, #contact .title {
     font-size: 4.5rem;
     font-weight: bold;
@@ -224,6 +224,11 @@ img {
     font-size: 2rem; }
   #myCustomTooltip .tooltipBlock p {
     font-size: 1.8rem; }
+
+@media (max-width: 800px) {
+  #home .title, #personal .title, #experience .title, #skills .title, #portfolio .title, #contact .title {
+    margin: 50px 0;
+    font-size: 2.7rem; } }
 
 #nav {
   position: absolute;
@@ -306,9 +311,11 @@ img {
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     border: 3px solid #FFF;
-    border-radius: 100%; }
+    border-radius: 100%;
+    margin-bottom: 50px;
+    box-sizing: border-box; }
     #home .homeJumpImg, #home .homeJumpImg::before, #home .homeJumpImg::after {
       width: 12px;
       height: 12px;
@@ -342,6 +349,10 @@ img {
       background: linear-gradient(-4deg, white 40%, #6f84a1 50%, white 60%);
       -webkit-text-fill-color: transparent;
       -webkit-background-clip: text; }
+    #home .main .name {
+      font-size: 2.6rem; }
+    #home .main .role {
+      font-size: 1.6rem; }
   #home .star-1, #home .star-2, #home .star-3 {
     width: 1px;
     height: 1px;
@@ -374,26 +385,39 @@ img {
   100% {
     transform: translateY(-5000px); } }
 
-#personal .main .carouselWrap {
-  flex: 0 0 250px;
-  margin: 0 30px;
-  height: 333px;
-  border-radius: 20px;
-  overflow: hidden;
-  position: relative;
-  z-index: 1; }
+#personal {
+  position: relative; }
+  #personal .main {
+    justify-content: center; }
+    #personal .main .pikachu {
+      position: absolute;
+      top: 80px;
+      left: 0; }
+    #personal .main .carouselWrap {
+      flex: 0 0 300px;
+      height: 400px;
+      margin: 0 30px;
+      border-radius: 20px;
+      overflow: hidden;
+      position: relative;
+      z-index: 1; }
+    #personal .main .carouselInner img {
+      transition: all 1s linear; }
+      #personal .main .carouselInner img:hover {
+        transform: rotate(-10deg); }
+    #personal .main .aboutMe {
+      font-family: Microsoft JhengHei;
+      font-size: 2rem;
+      letter-spacing: 2px;
+      text-align: justify;
+      color: #011633;
+      padding: 0 30px; }
 
-#personal .main .carouselInner img {
-  transition: all 1s linear; }
-  #personal .main .carouselInner img:hover {
-    transform: rotate(-10deg); }
-
-#personal .main .aboutMe {
-  font-family: Microsoft JhengHei;
-  font-size: 2.2rem;
-  letter-spacing: 2px;
-  text-align: justify;
-  font-size: 0; }
+@media (max-width: 800px) {
+  #personal .main {
+    flex-wrap: wrap; }
+    #personal .main .carousel {
+      flex: 1 1 100%; } }
 
 #experience .main {
   flex-wrap: wrap; }
