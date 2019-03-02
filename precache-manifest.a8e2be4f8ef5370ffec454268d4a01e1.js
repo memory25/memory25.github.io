@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "22ebd380d6935acf5bd40ad9303d3060",
-    "url": "/static/media/personalpic4.22ebd380.jpg"
+    "revision": "a2274eae0a59bed8c04c642bca91d967",
+    "url": "/static/media/personalpic6.a2274eae.jpg"
   },
   {
-    "revision": "9e25702bb9e37728bd26",
-    "url": "/static/css/main.8a376c20.chunk.css"
+    "revision": "5e7b8a57a3b3a3c691fb",
+    "url": "/static/css/main.13b474d3.chunk.css"
   },
   {
-    "revision": "e37e44942c9d3d8919ae",
-    "url": "/static/js/1.e37e4494.chunk.js"
+    "revision": "4773ce16e8d3f9f513c0",
+    "url": "/static/js/1.4773ce16.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -32,16 +32,16 @@ self.__precacheManifest = [
     "url": "/static/media/personalpic3.cae5a701.jpg"
   },
   {
-    "revision": "9e25702bb9e37728bd26",
-    "url": "/static/js/main.9e25702b.chunk.js"
+    "revision": "22ebd380d6935acf5bd40ad9303d3060",
+    "url": "/static/media/personalpic4.22ebd380.jpg"
   },
   {
     "revision": "e2fcca93992d8d61c17b7e7a4a5013c9",
     "url": "/static/media/personalpic5.e2fcca93.jpg"
   },
   {
-    "revision": "a2274eae0a59bed8c04c642bca91d967",
-    "url": "/static/media/personalpic6.a2274eae.jpg"
+    "revision": "5e7b8a57a3b3a3c691fb",
+    "url": "/static/js/main.5e7b8a57.chunk.js"
   },
   {
     "revision": "ea19fee2a2872560de70c63c0770528d",
@@ -60,11 +60,27 @@ self.__precacheManifest = [
     "url": "/static/media/girlDolls.8b7dd484.png"
   },
   {
+    "revision": "0bbc1143f381bcdbdd8a55b38cb47db6",
+    "url": "/static/media/purecssgame.0bbc1143.png"
+  },
+  {
+    "revision": "6b70283e5e4f1a6659e948816fc029aa",
+    "url": "/static/media/kaohsiungdisasterquery.6b70283e.png"
+  },
+  {
+    "revision": "14641a9d5644bdcf5835bf6101f32e10",
+    "url": "/static/media/personv1-jquery.14641a9d.png"
+  },
+  {
+    "revision": "682af004b6c961475f4dad81f9e5f45f",
+    "url": "/static/media/comment.682af004.png"
+  },
+  {
     "revision": "34b17ad5e145a5960319fd0795aaa249",
     "url": "/static/media/paper-1126172_960_720.34b17ad5.jpg"
   },
   {
-    "revision": "756174d1721cf1193a8c75c3953e81e7",
+    "revision": "35961789d06463d431a18f2227bd2ae0",
     "url": "/index.html"
   }
 ];
