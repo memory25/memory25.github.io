@@ -40,7 +40,9 @@ function PorBox(props: IPorBox): JSX.Element {
         {!isEven && (
           <>
             <h1>{theme}</h1>
-            <a href={link}>Go!</a>
+            <a href={link} rel="noopener noreferrer" target="_blank">
+              Go!
+            </a>
           </>
         )}
       </div>

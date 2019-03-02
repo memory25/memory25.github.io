@@ -52,7 +52,7 @@ const portf: IPortf = {
       purpose: '產出個人介紹網',
       used: 'jQuery、Sass',
     }),
-    link: 'https://codepen.io/Xuan411/pen/zPYVoo?editors=0010',
+    link: 'https://memory25.github.io/person-jquery/',
     theme: 'v1舊版網站，v2本站為React hooks',
   },
   battlegame: {
