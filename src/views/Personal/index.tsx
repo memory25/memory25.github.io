@@ -10,7 +10,7 @@ export default () => (
       <Pikachu />
       <Carousel imgList={imgList} />
       <div className="aboutMe">
-        <p>我是莊逸軒，來自高雄。</p>
+        <p>我是莊逸軒(Sam)，來自高雄。</p>
         <p>
           2016年畢業於嘉義大學應用數學系，在就學期間學校培養了我很多關於數理邏輯方面的思考能力，並且我也因為興趣而去選修程式相關科目，進而培養了我對程式的熱情，畢業後尤其對前端網頁特別有興趣所以積極的自學HTML5、CSS3、jQuery、RWD、SASS、JS…等開發前端相關知識。
         </p>
