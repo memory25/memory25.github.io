@@ -468,7 +468,8 @@ img {
 
 @media (max-width: 800px) {
   #experience .main .row {
-    width: 100%; } }
+    width: 100%;
+    text-align: left; } }
 
 #skills .title {
   flex: 0 0 100%; }
