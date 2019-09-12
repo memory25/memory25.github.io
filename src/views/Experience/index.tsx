@@ -28,7 +28,6 @@ export default () => (
         <p>協作人員: 前端~6位、後端~5位、PM、UI design </p>
         <p>使用 ES6、React、Flux、RESTful、Webpack、Sass</p>
         <p>此份為舊專案翻新，並加入新的feature</p>
-        <p>主管答應讓我使用 React-Hooks</p>
 
         <h3>專案3 Embedded Web 2018/6 - 2019/2</h3>
         <p style={{color: 'red'}}>獨立負責整份專案前端部分</p>
