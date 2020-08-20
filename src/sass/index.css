@@ -300,6 +300,16 @@ img {
     transform: translateY(25px) rotate(45deg);
     opacity: 0.5; } }
 
+@keyframes toggleHeadPic {
+  0 {
+    opacity: 1; }
+  30% {
+    opacity: 1; }
+  70% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
 #home {
   height: 100vh;
   background: linear-gradient(to top, #011633, black);
@@ -339,12 +349,19 @@ img {
     display: flex;
     flex-direction: column;
     text-align: center; }
-    #home .main .me {
+    #home .main .me, #home .main .me2 {
       width: 100px;
       height: 100px;
       background: url("../images/me.jpg") 0 0/cover no-repeat;
       border-radius: 100%;
       margin: 0 auto; }
+    #home .main .me2 {
+      animation: toggleHeadPic 6s infinite alternate;
+      position: absolute;
+      background: url("../images/me_2.jpg") 0 0/cover no-repeat;
+      left: 50%;
+      opacity: 1;
+      transform: translateX(-50%); }
     #home .main h1, #home .main h2 {
       background: linear-gradient(-4deg, white 40%, #6f84a1 50%, white 60%);
       -webkit-text-fill-color: transparent;
